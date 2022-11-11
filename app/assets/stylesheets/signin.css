@@ -34,25 +34,40 @@ body {
   padding: 15px;
 }
 .login-card {
-  background-color: #fefefe;
+  /* background-color: #fefefe; */
+  background-color: #f5f5f5;
+  color: #173f4f;
   border:1px transparent;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  /* box-shadow: 0 1px 3px rgba(23,63,79,0.12), 0 1px 2px rgba(23,63,79,0.24); */
 }
 .login-card-header {
   font-size: 20px;
   font-weight: bold !important;
-  color:#545454;
+  color:#173f4f;
 }
 .btn-signin {
   font-size: 18px;
+  background-color: #1aad95;
+  border-color: #1aad95;
+  color: #fff;
+}
+.btn-signin:hover {
+  background-color: #00a489;
+  border-color: #00a489;
+  color: #fff;
+}
+.btn-signin:active, .btn-signin:visited, .btn-signin:focus {
+  background-color: #40bba7 !important;
+  border-color: #40bba7 !important;
+  color: #fff !important;
 }
 .login-checkbox {
-  text-align: left;
+  /* text-align: left; */
+  padding-left: 2px !important;
 }
 .login-checkbox-label{
   position: relative;
-  top: 1px;
-  margin-left: 4px;
+  top: -3px;
 }
 .bi-login-icon {
   position: relative;
@@ -61,6 +76,10 @@ body {
 }
 .login-form-link {
   font-size:14px;
+  color: #21a4df;
+}
+.login-form-link:hover, .login-form-link:active, .login-form-link:focus {
+  color: #59bbe7;
 }
 .copyright-text {
   font-size:14px;

@@ -6,8 +6,9 @@
     <div class="card-body">
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'signin-form',} ) do |f| %>
-        <%= image_tag('logo.svg', class: 'mb-2', width: '72') %>
-        <h1 class="login-card-header mb-5 fw-normal">Please sign in</h1>
+        <%= image_tag('ouro_logo_dark.svg', class: 'mt-2 mb-2', width: '36') %>
+        <span style="font-size:24px;font-weight:700;margin-left:2px;position:relative;top:4px;">uroboros</span>
+        <h1 class="login-card-header mt-4 mb-3 fw-normal">Please sign in</h1>
 
         <div class="form-floating">
           <%= f.email_field :email, autocomplete: "email", id: "floatingInput", class: "form-control", placeholder: "name@example.com" %>
@@ -19,15 +20,15 @@
         </div>
 
         <% if devise_mapping.rememberable? %>
-          <div class="checkbox login-checkbox mb-3">
-            <label>
-              <%= f.check_box :remember_me %>
+          <div class="checkbox checkbox-blue login-checkbox mt-3 mb-3">
+            <%= f.check_box :remember_me, id: 'remember_me' %>
+            <label for="remember_me">
               <span class="login-checkbox-label">Remember me</span>
             </label>
           </div>
         <% end %>
 
-        <%= button_tag(type: "submit", class: "w-100 btn btn-lg btn-dark btn-signin mb-3") do %>
+        <%= button_tag(type: "submit", class: "w-100 btn btn-lg btn-signin mb-3") do %>
           <i class="bi bi-box-arrow-in-right bi-login-icon"></i>
           Sign in
         <% end %>

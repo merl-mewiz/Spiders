@@ -1,0 +1,41 @@
+<%= content_for :title  do %>
+  Workspaces
+<% end %>
+
+<%= content_for :top_panel  do %>
+<div class="px-3 py-2 bg-top-panel">
+  <div class="container">
+    <div class="row">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <button type="button" class="btn btn-sm btn-top-panel">
+         <i class="bi bi-plus-lg btn-top-panel-icon"></i>
+         New workspace
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="main-h1 mb-4">My workspaces</h1>
+    <div class="col-4">
+      <div class="card workspace-list-card">
+        <div class="card-header">
+          <h5 class="card-title mb-0">
+            <i class="bi bi-box card-title-icon"></i>
+            Prof-press
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="card-description">
+            Тут будут содержаться проекты и задачи
+          </div>
+          <span class="card-small-icon" title="Users"><i class="bi bi-person-fill"></i> 5</span>
+          <span class="card-small-icon" title="Tasks"><i class="bi bi-list-task"></i> 12</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

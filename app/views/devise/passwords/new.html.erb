@@ -9,7 +9,7 @@
     <div class="card-body">
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-        <%= image_tag('logo.svg', class: 'mb-2', width: '72') %>
+        <%= image_tag('ouro_logo_dark.svg', class: 'mb-2', width: '72') %>
         <h1 class="login-card-header mb-4 fw-normal">Forgot your password?</h1>
 
         <div class="form-floating">
@@ -17,7 +17,7 @@
           <%= f.label :email, "Email address" %>
         </div>
 
-        <%= button_tag(type: "submit", class: "w-100 btn btn-lg btn-dark btn-signin mb-3") do %>
+        <%= button_tag(type: "submit", class: "w-100 btn btn-lg btn-primary btn-signin mb-3") do %>
           <i class="bi bi-envelope bi-login-icon"></i>
           Send me reset password instructions
         <% end %>

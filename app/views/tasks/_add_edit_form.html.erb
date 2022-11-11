@@ -1,0 +1,28 @@
+<%= form_with model: task do |f| %>
+  <div class="form-floating mb-3">
+    <%= f.text_field :title, class: "form-control", required: '', placeholder: 'Task title' %>
+    <%= f.label :title, "Title" %>
+  </div>
+
+  <div class="form-floating mb-3">
+    <%= f.text_area :description, class: 'form-control', style: 'height:120px', placeholder: 'Task description' %>
+    <%= f.label :description, "Description" %>
+  </div>
+
+  <div class="form-floating mb-3">
+    <%= f.collection_select :priority_id, Priority.all, :id, :title, {}, { class: 'form-select' } %>
+    <%= f.label :priority_id, "Priority" %>
+  </div>
+
+  <div class="form-floating mb-3">
+    <%= f.collection_select :status_id, Status.all, :id, :title, {}, { class: 'form-select' } %>
+    <%= f.label :status_id, "Status" %>
+  </div>
+
+  <div class="form-floating mb-3">
+    <%= f.datetime_local_field :deadline, class: 'form-control rounded-3' %>
+    <%= f.label :deadline, "Deadline" %>
+  </div>
+
+  <%= content_for :add_update_button %>
+<% end %>
